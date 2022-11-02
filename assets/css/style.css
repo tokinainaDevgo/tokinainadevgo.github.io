@@ -1,0 +1,354 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root
+{
+    background-color: #1d0707;
+}
+
+.header
+{
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFF;
+    margin-bottom: 20px;
+}
+
+.header a
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu-control img, .close-menu img
+{
+    cursor: pointer;
+}
+
+.close-menu img
+{
+    border-radius: 50%;
+    transform: translateY(50%);
+    background: #aa0d0d;
+}
+
+a.logo
+{
+    color: red;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+.navbar
+{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.425);
+    height: 100vh;
+}
+
+.social-logo
+{
+    margin: 0 0 0 5px;
+}
+
+.open
+{
+    transform: translateY(0);
+    display: block;
+    overflow: hidden;
+}
+
+.nav-link, .link a
+{
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-link
+{
+    background-color: #aa0d0d;
+    padding: 15px 0;
+}
+
+.nav-link:hover
+{
+    background-color: #811818;
+}
+
+.container
+{
+    margin: 0 auto;
+    max-width: 1250px;
+    padding: 0 10px;
+}
+
+.body
+{
+    margin: 0 15px;
+    color: white;
+}
+
+.welcome
+{
+    margin-bottom: 35px;
+}
+
+.welcome img, .welcome .title, .welcome .description
+{
+    margin-bottom: 15px;
+}
+
+.welcome img
+{
+    width: 100%;
+}
+
+.welcome .title
+{
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.join-us
+{
+    display: inline-block;
+    margin-bottom: 15px;
+    background-color: #aa0d0d;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.join-us:hover
+{
+    background: #690707;
+}
+
+#blog .title, .about .title
+{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    margin: 15px 0;
+}
+
+.card
+{
+    display: block;
+    margin: 30px 0;
+}
+
+.card-header img
+{
+    width: 100%;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.card-body
+{
+    margin-bottom: 10px;
+}
+
+.card-header a
+{
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    transition: transform .3s;
+}
+
+.about .content
+{
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.footer
+{
+    padding: 15px 30px;
+    border-radius: 10px;
+    background: #811818;
+    margin-top: 30px;
+}
+
+.subtitle
+{
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.form-input
+{
+    display: block;
+    margin-bottom: 8px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    padding: 0 5px;
+    width: 100%;
+    height: 25px;
+}
+
+.form-input:focus
+{
+    outline: none;
+}
+
+.btn-send
+{
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+}
+
+.link a
+{
+    color: #FFF;
+    margin-bottom: 10px;
+}
+
+.form-contact, .link
+{
+    margin-bottom: 20px;
+}
+
+.social-contact
+{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.social-contact img
+{
+    margin: 0 8px 8px 0;
+}
+
+img
+{
+    border-radius: 8px;
+}
+
+.scroll-animatable
+{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all ease-in-out 0.5s;
+}
+
+.animate
+{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media only screen and (min-width:640px)
+{
+    .close-menu, .menu-control
+    {
+        display: none;
+    }   
+
+    .navbar
+    {
+        display: flex;
+        position: static;
+        height: auto;
+        background: none;
+        transform: none;
+    }
+
+    .nav-link
+    {
+        display: inline-block;
+        background: none;
+        margin: 0 25px;
+    }
+
+    .nav-link:hover
+    {
+        background: none;
+        color: red;
+    }
+
+    .article
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card
+    {
+        width: 50%;
+        padding: 0 10px;
+    }
+
+    .footer
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .form-contact
+    {
+        flex: none;
+        width: 260px;
+    }
+
+    .link
+    {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 950px)
+{
+    .nav-link
+    {
+        display: inline-block;
+        margin: 0 30px;
+    }
+
+    .welcome
+    {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .welcome img
+    {
+        width: 45%;
+    }
+
+    .welcome .content
+    {
+        width: 48%;
+    }
+
+    .card
+    {
+        width: 25%;
+    }
+}
